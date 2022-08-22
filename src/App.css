@@ -1,5 +1,20 @@
+@font-face {
+  font-family: "fontVazir";
+  src: url("./fontvazir/Vazir-Medium.eot");
+  src: url("./fontvazir/Vazir-Medium.woff") format("woff"),
+
+}
+
+body {
+  font-family: 'fontVazir';
+  font-weight: bold;
+
+}
+
 .App {
   text-align: center;
+  background-color: rgb(176, 119, 45);
+
 }
 
 .App-logo {
@@ -13,16 +28,8 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
+
 
 .App-link {
   color: #61dafb;
@@ -32,7 +39,245 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+.header {
+  /* background-image: radial-gradient(farthest-corner at 10px 100px, rgb(94, 92, 92) 0%, rgb(43, 43, 44) 100%); */
+  max-height: 90vh;
+  font-size: calc(10px + 2vmin);
+  display: flex;
+  flex-direction: column;
+  border: .4rem solid beige;
+  border-radius: 1rem;
+  position: relative;
+
+}
+
+.pic-Header {
+  opacity: 0.7;
+  position: relative;
+  margin: .3rem;
+  
+}
+
+.titele-header {
+  color : white;
+  font-family: 'fontVazir';
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+a:link {
+  color:rgb(36, 242, 39);
+  text-decoration: none;
+  font-size: large;
+
+}
+
+visited link */
+/* a:visited {
+  color: rgb(15, 19, 19);
+  text-decoration: none;
+  font-size: large;
+  background-color: rgba(0, 83, 83, 0.308);
+  
+} */
+
+/* mouse over link */
+/* a:hover {
+  color: rgb(197, 16, 107);
+  text-decoration: none;
+  font-size: large;
+  background-color: rgba(0, 83, 83, 0.308);
+
+} */
+
+/* selected link */
+/* a:active {
+  color: rgb(0, 255, 55);
+  text-decoration: none;
+  font-size: large;
+  background-color: rgba(0, 83, 83, 0.308);
+
+} */
+.section {
+  
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+.fullpage {
+  background-color: rgba(210, 156, 85, 0.515);
+
+ 
+ 
+}
+.CardItem {
+  display: contents;
+}
+
+.ProductSingle h3 {
+  background-color: rgb(210, 156, 85);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.imgProduct {
+  width: 200px;
+  height: 360px;
+  
+}
+.CartTitle {
+  border: solid 2px black ;
+  border-radius: .5rem;
+  
+} 
+.CartBody {
+
+  border: solid 2px black;
+  border-radius: .5rem ;
+  background-color: rgb(107, 142, 172);
+}
+
+.navColor{
+  background-color: rgba(33, 218, 61, 0.784);
+  border-radius: 1rem;
+}
+
+.navColor .navlink {
+  color: black;
+}
+.SideBar {
+
+  border : 1px solid rgba(50, 51, 51, 0.195);
+  border-radius: .3rem;
+  background-color:rgba(50, 51, 51, 0.195);;
+  margin: 1.3rem;
+  margin-top: 1rem;
+  padding: .3rem;
+  font-family: 'fontVazir';
+  font-weight: 700;
+  font-size: larger;
+
+ 
+}
+.LinkDecor{
+  color : black;
+  text-decoration: none;
+  margin: .3rem;
+  margin-top: 1rem;
+  padding: .1rem;
+}
+.navbar-page{ 
+  background-color: rgb(210, 156, 85);
+
+}
+  
+.imgSingle{
+  position: relative;
+  max-width: 400px;
+  max-height: 750px;
+  margin: 1.5rem;
+  border: 0.1rem solid rgb(255, 255, 255);
+  border-radius: .2rem;
+  /* box-shadow: 2rem solid rgb(59, 19, 139); */
+}
+.boxProduct {
+  border:solid 1px whitesmoke;
+  border-radius: 1rem;
+  background-color: rgb(223, 220, 220);
+  margin-top: 2rem;
+  padding: .5rem;
+  margin-right: 2rem;
+  
+}
+
+.circleBase {
+  border-radius: 100%;
+}
+
+.circle1 {
+  width: 100px;
+  height:100px;
+  background: #5f6160;
+  border: .2rem solid rgba(240, 233, 233, 0.336);
+}
+.circle2 {
+  width: 100px;
+  height: 100px;
+  background: #060606;
+  border: .2rem solid rgba(240, 233, 233, 0.336);
+}
+
+
+.circle3 {
+  width: 100px;
+  height: 100px;
+  background: #f6f4f4;
+  border: .2rem solid rgba(240, 233, 233, 0.336);
+}
+
+.circle4 {
+  width: 100px;
+  height: 100px;
+  background: #2e6a41;
+  border: .2rem solid rgba(240, 233, 233, 0.336);
+}
+.SquareBase {
+  width: 100px;
+  height: 100px;
+  border: .2rem solid rgb(115, 115, 115);
+  margin-top: 1rem;
+  text-decoration: none;
+  background-color: white;
+  border-radius: .5rem;
+ 
+}
+
+.activeSize{
+border: blue solid .2rem;
+background-color: rgba(145, 218, 218, 0.742);
+}
+
+.feeproduct{
+  color: black(150, 147, 147);
+  font-size: 1.4rem;
+  margin-top: .8rem ;
+  text-align: end;
+  margin-bottom: 2rem;
+  border-bottom: #060606 solid;
+  padding: 1.5rem;
+}
+.sizeproduct {
+  font-size: 2.5 rem;
+  text-align: center;
+  justify-content: center;
+  margin-top: .5rem;
+  padding: .4rem;
+  color: black;
+
+} .activeColor{
+  border : .3rem  blue solid ;
+}
+.buttonProduct{
+  min-width: 300px;
+  outline: none;
+}
+
+
+
